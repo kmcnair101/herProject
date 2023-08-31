@@ -1,69 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Landing Page</title>
-  <link href="css/style.css" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Her Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-  <section id="section1">
-    <div class="content">
-      <div>
-        <h2>Lorem ipsum dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-        <a class="link" href="#section2">Learn More</a>
-      </div>
-    </div>
-    <div class="box">
-      <img src="Photos/pexels-photo-1164674.jpeg" alt="photo of female model">
-    </div>
-    <ul class="nav" id="nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#section1" class="active">About</a></li>
-      <li><a href="#section2" class="scroll2">Women</a></li>
-      <li><a href="#section3" class="scroll3">Accessories</a></li>
-      <li><a href="#section4" class="scroll4">Community</a></li>
-    </ul>
-  </section>
-  <section class="content" id="section2">
-    <div class="box">
-    <img src="Photos/pexels-photo-952214.jpeg"" alt="photo of female model">
-    </div>
-    <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. <br> <a href="#">Women</a></p>
-  </section>
+  <body class="body">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list" id="nav">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a
+              href="#section1"
+              class="nav__link nav__link--active"
+              data-duration="1500"
+              >About</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="#section2"
+              class="nav__link nav__link--scroll2"
+              data-duration="1500"
+              >Women</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="#section3"
+              class="nav__link nav__link--scroll3"
+              data-duration="1500"
+              >Accessories</a
+            >
+          </li>
+          <li class="nav__item">
+            <a
+              href="#section4"
+              class="nav__link nav__link--scroll4"
+              data-duration="1500"
+              >Community</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="section1" class="section">
+        <div class="content">
+          <h2 class="content__title">Empowering Women</h2>
+          <p class="content__p">
+            We believe in the power of women. Our mission is to provide a
+            platform where women can connect, learn, and grow together.
+          </p>
+          <br />
+          <p class="content__p">
+            In this journey, we embark on a seamless blend of aesthetics and
+            education. We offer resources that unveil the nuances of fashion,
+            transforming enthusiasts into connoisseurs. From classic elegance to
+            avant-garde experiments, every woman finds her canvas to create a
+            sartorial masterpiece.
+          </p>
+          <a class="content__link" href="#section2">Learn More</a>
+        </div>
+        <img
+          src="Photos/pexels-photo-1164674.jpeg"
+          alt="Empowering women"
+          class="section__image"
+        />
+      </section>
 
-  <section class="content" id="section3">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. <br> <a href="#">Accessories</a></p>
-    <br>
-    <div class="box">
-    <img src="Photos/pexels-photo-1559086.jpeg" alt="photo of female model">
-    </div>
-  </section>
+      <section class="content" id="section2">
+        <img
+          src="Photos/pexels-photo-952214.jpeg"
+          alt="Women's Fashion"
+          class="section__image"
+        />
+        <div class="content__wrapper">
+          <p class="content__paragraph">
+            Explore our collection of the latest trends in women's fashion. From
+            elegant dresses to comfortable activewear, we have it all.
+          </p>
+          <a href="#" class="content__link">Women's Fashion</a>
+        </div>
+      </section>
 
-  <section class="content" id="section4">
-    <div class="box">
-    <img src="Photos/pexels-photo-3825168.jpeg" alt="photo of female model">
-    </div>
-    <br>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. <br> <a href="#">Community</a></p>
-    
-  </section>
-  <footer>
+      <section class="content" id="section3">
+        <div class="content__wrapper">
+          <p class="content__paragraph">
+            Complete your look with our exquisite accessories. Elevate your
+            style with handpicked jewelry, bags, and more.
+          </p>
+          <a href="#" class="content__link">Accessories</a>
+        </div>
+        <img
+          src="Photos/pexels-photo-1559086.jpeg"
+          alt="Stylish Accessories"
+          class="section__image"
+        />
+      </section>
+
+      <section class="content" id="section4">
+        <img
+          src="Photos/pexels-photo-3825168.jpeg"
+          alt="Community of Women"
+          class="section__image"
+        />
+        <div class="content__wrapper">
+          <p class="content__paragraph">
+            Join our vibrant community of women supporting women. Share your
+            stories, advice, and experiences.
+          </p>
+          <a href="#" class="content__link">Join the Community</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
       <ul class="sci">
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul> 
-  </footer>
-  <span class="menuicon" id="toggle" onclick="menuToggle()"></span> 
-  <script src="js/app.js"></script> 
-</body>
+        <li><a href="#" class="sci__link">Facebook</a></li>
+        <li><a href="#" class="sci__link">Twitter</a></li>
+        <li><a href="#" class="sci__link">Instagram</a></li>
+      </ul>
+    </footer>
+    <span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+    <script src="js/app.js"></script>
+  </body>
 </html>
