@@ -1,4 +1,3 @@
-// Smooth scroll function
 function smoothScroll(target, duration) {
   const targetSection = document.querySelector(target);
   if (!targetSection) return;
